@@ -534,7 +534,7 @@
 }
 
 .header__mobile-right-icon {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     color: var(--white-color);
 }
 
@@ -777,6 +777,7 @@
 
 .header__sort-item {
     flex: 1;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .header__sort-item--active .header__sort-link {
@@ -1142,8 +1143,9 @@
     height: calc(var(--line-height) * 2);
     line-height: var(--line-height);
     text-align: center;
-    width: 108px;
+    width: 110px;
     font-weight: 300;
+    padding: 0 6px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -1237,6 +1239,7 @@
     transition: box-shadow ease 0.2s, transform ease 0.2s;
     will-change: box-shadow, transform;
     z-index: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .home-product-item:hover {
@@ -1458,6 +1461,10 @@
     padding-left: 0;
 }
 
+.footer-item {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .footer-item__link {
     display: flex;
     align-items: center;
@@ -1469,6 +1476,7 @@
 }
 
 .footer__download {
+    padding-top: 8px;
     display: flex;
 }
 
@@ -1481,6 +1489,7 @@
 
 .footer__download-apps {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     margin-left: 12px;
@@ -1523,10 +1532,18 @@
     display: flex;
 }
 
+.footer-info__arena::-webkit-scrollbar {
+    display: none;
+}
+
 .footer-info__arena-list {
     list-style: none;
     display: flex;
     padding-left: 0;
+}
+
+.footer-info__arena-list::-webkit-scrollbar {
+    display: none;
 }
 
 .footer-info__arena-item {

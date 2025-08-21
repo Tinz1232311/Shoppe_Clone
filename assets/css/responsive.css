@@ -1,7 +1,6 @@
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
     :root {
-        --header-height: 68px;
         --navbar-height: 0px;
     }
 
@@ -45,6 +44,10 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    :root {
+        --header-height: 68px;
+    }
+
     .hide-on-tablet {
         display: none;
     }
@@ -57,6 +60,10 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+    :root {
+        --header-height: 54px;
+    }
+    
     .hide-on-mobile {
         display: none;
     }
@@ -84,6 +91,16 @@
         animation: mobileSearchSideIn linear 0.3s;
     } 
 
+    @keyframes mobileSearchSideIn {
+        from {
+            top: calc(var(--header-height) / 2);
+            opacity: 0;
+        } to {
+            top: var(--header-height);
+            opacity: 1;
+        }
+    }
+
     .header__search-history {
         position: fixed;
         width: 100%;
@@ -102,17 +119,25 @@
         min-width: 36px;
     }
 
-    .app__content {
+    .app__content,
+    .footer-top__head {
         margin: 0 4px;
     }
 
-    @keyframes mobileSearchSideIn {
-        from {
-            top: calc(var(--header-height) / 2);
-            opacity: 0;
-        } to {
-            top: var(--header-height);
-            opacity: 1;
-        }
+    .header__logo-img {
+        width: 120px;
+    }
+
+    .footer__heading {
+        text-align: center;
+    }
+
+    .footer-item__link,
+    .footer__download {
+        justify-content: center;
+    }
+
+    .footer__download-apps {
+        flex: unset;
     }
 }
