@@ -217,6 +217,15 @@ p {
     }
 }
 
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 @keyframes growth {
     from {
         transform: scale(var(--growth-from));

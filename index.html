@@ -6,6 +6,7 @@
     <!-- IE will show the UI with latest version -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>SHOPEE</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -608,6 +609,183 @@
               </div>
             </div>
           </div>
+        </div>
+
+        <input type="checkbox" hidden id="mobile-nav-checkbox" class="header__mobile-nav-checkbox">
+
+        <label class="header__mobile-nav-overlay" for="mobile-nav-checkbox">
+
+        </label>
+
+        <div class="header__mobile-nav">
+          <details class="header__mobile-nav-details">
+            <summary class="header__mobile-nav-summary">
+              <h3 class="header__mobile-nav-heading">Tiện ích chung</h3>
+            </summary>
+
+            <ul class="header__mobile-nav-list">
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Trang chủ
+                  <i class="fa-solid fa-house header__mobile-nav-icon"></i>
+                </a>
+              </li>
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Vào cửa hàng trên ứng dụng tickID
+                  <i class="fa-solid fa-store header__mobile-nav-icon"></i>
+                </a>
+              </li>
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Kết nối qua Facebook
+                  <i class="fa-brands fa-facebook header__mobile-nav-icon"></i>
+                </a>
+              </li>
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Kết nối qua Instagram
+                  <i class="fa-brands fa-instagram header__mobile-nav-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="header__mobile-nav-details">
+            <summary class="header__mobile-nav-summary">
+              <h3 class="header__mobile-nav-heading">Hỗ trợ người dùng</h3>
+            </summary>
+
+            <ul class="header__mobile-nav-list">
+              <li class="header__mobile-nav-item header__mobile-nav--notification">
+                <a href="#" class="header__mobile-nav-link">Thông báo
+                  <i class="fa-solid fa-bell header__mobile-nav-icon"></i>
+                </a>
+              </li>
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Trợ giúp
+                  <i class="fa-solid fa-circle-question header__mobile-nav-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </details>
+
+          <details class="header__mobile-nav-details">
+            <summary class="header__mobile-nav-summary">
+              <h3 class="header__mobile-nav-heading">Quản lý tài khoản</h3>
+            </summary>
+
+            <!-- When user is not login -->
+            <!-- <ul class="header__mobile-nav-list header__mobile-nav-list--no-login">
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Đăng nhập
+                  <i class="fa-solid fa-right-to-bracket header__mobile-nav-icon"></i>
+                </a>
+              </li>
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Đăng ký
+                  <i class="fa-solid fa-user-plus header__mobile-nav-icon"></i>
+                </a>
+              </li>
+            </ul> -->
+
+            <ul class="header__mobile-nav-list header__mobile-nav-list--is-login">
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Tài khoản của tôi
+                  <i class="fa-solid fa-user header__mobile-nav-icon"></i>
+                </a>
+              </li>
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Địa chỉ của tôi
+                  <i class="fa-solid fa-map-marker-alt header__mobile-nav-icon"></i>
+                </a>
+              </li>
+              <li class="header__mobile-nav-item">
+                <a href="#" class="header__mobile-nav-link">Đơn hàng
+                  <i class="fa-solid fa-box header__mobile-nav-icon"></i>
+                </a>
+              </li>
+              <li class="header__mobile-nav-item header__mobile-nav-item--separate">
+                <a href="#" class="header__mobile-nav-link">Đăng xuất
+                  <i class="fa-solid fa-right-from-bracket header__mobile-nav-icon"></i>
+                </a>
+              </li>
+            </ul>
+          </details>
+
+          <label class="header__mobile-close" for="mobile-nav-checkbox">
+            <i class="fa-solid fa-xmark"></i>
+          </label>
+        </div>
+
+        <div class="header__mobile-notify">
+          <div class="header__mobile-notify-header">
+            <h3>Thông Báo Mới Nhận</h3>
+            <div class="header__mobile-notify-close">
+              <i class="fa-solid fa-close"></i>
+            </div>
+          </div>
+          <ul class="header__mobile-notify-list">
+            <li class="header__mobile-notify-item header__mobile-notify-item--viewed">
+              <a href="#1" class="header__mobile-notify-link">
+                <img
+                  src="./assets/images/notification_item/item_1.webp"
+                  alt=""
+                  class="header__mobile-notify-img"
+                />
+                <div class="header__mobile-notify-info">
+                  <span class="header__mobile-notify-name"
+                    >Áo kiểu croptop cúc cài ,áo thun ôm body 6 cúc màu
+                    xanh than RN chất thun tăm co giãn tôn dáng phong
+                    cách Ulzzang</span
+                  >
+                  <span class="header__mobile-notify-desc"
+                    >Áo kiểu croptop cúc dài, áo thua ôm body 6 cúc màu
+                    xanh than RN chất thun tăm co giãn.</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="header__mobile-notify-item">
+              <a href="#2" class="header__mobile-notify-link">
+                <img
+                  src="./assets/images/notification_item/item_2.webp"
+                  alt=""
+                  class="header__mobile-notify-img"
+                />
+                <div class="header__mobile-notify-info">
+                  <span class="header__mobile-notify-name"
+                    >Ly giữ nhiệt Inox 316 Phủ Sứ 735ml ống hút thủy
+                    tinh, cốc giữ nhiệt bình giữ nhiệt tiện lợi đi làm
+                    đi học Uri Smart Home</span
+                  >
+                  <span class="header__mobile-notify-desc">
+                    Ly giữ nhiệt Inox 316 Phủ Sứ 735ml ống hút thủy
+                    tinh, cốc giữ nhiệt bình giữ nhiệt tiện lợi</span
+                  >
+                </div>
+              </a>
+            </li>
+            <li class="header__mobile-notify-item">
+              <a href="#3" class="header__mobile-notify-link">
+                <img
+                  src="./assets/images/notification_item/item_3.webp"
+                  alt=""
+                  class="header__mobile-notify-img"
+                />
+                <div class="header__mobile-notify-info">
+                  <span class="header__mobile-notify-name"
+                    >Ốp Lưng iPhone Paris IMD Cứng Nhám, Siêu Chống Sốc,
+                    Bảo Vệ Camera - iP
+                    6/6s/7/8/Plus/X/XS/XR/11/12/13/14/15/Pro/Max</span
+                  >
+                  <span class="header__mobile-notify-desc"
+                    >Ốp Lưng iPhone Paris IMD Cứng Nhám, Siêu Chống Sốc,
+                    Bảo Vệ Camera</span
+                  >
+                </div>
+              </a>
+            </li>
+          </ul>
+          <footer class="header__mobile-notify-footer">
+            <a href="#" class="header__mobile-notify-footer-btn">Xem tất cả</a>
+          </footer>
         </div>
 
         <ul class="header__sort-bar">
@@ -1750,56 +1928,56 @@
             </div>
           </div>
         </div>
-        <!-- <div id="footer-bottom" class="footer-bottom">
+        <div id="footer-bottom" class="footer-bottom">
           <div class="grid wide">
-            <ul class="footer-policy">
-              <li class="footer-policy__item">
-                <a href="#footer" class="footer-policy__link"
+            <ul class="footer-bottom-policy">
+              <li class="footer-bottom-policy__item">
+                <a href="#footer" class="footer-bottom-policy__link"
                   >Chính sách bảo mật</a
                 >
               </li>
-              <li class="footer-policy__item">
-                <a href="#footer" class="footer-policy__link"
+              <li class="footer-bottom-policy__item">
+                <a href="#footer" class="footer-bottom-policy__link"
                   >Quy chế hoạt động</a
                 >
               </li>
-              <li class="footer-policy__item">
-                <a href="#footer" class="footer-policy__link"
+              <li class="footer-bottom-policy__item">
+                <a href="#footer" class="footer-bottom-policy__link"
                   >Chính sách vận chuyển</a
                 >
               </li>
-              <li class="footer-policy__item">
-                <a href="#footer" class="footer-policy__link"
+              <li class="footer-bottom-policy__item">
+                <a href="#footer" class="footer-bottom-policy__link"
                   >Chính sách trả hàng và hoàn tiền</a
                 >
               </li>
             </ul>
-            <div class="footer-certificate">
-              <a href="#footer" class="footer-certificate__link">
+            <div class="footer-bottom-certificate">
+              <a href="#footer" class="footer-bottom-certificate__link">
                 <img
                   src="./assets/images/certificate_item/certificate1.png"
                   alt="Certificate 1"
-                  class="footer-certificate__img"
+                  class="footer-bottom-certificate__img"
                 />
               </a>
-              <a href="#footer" class="footer-certificate__link">
+              <a href="#footer" class="footer-bottom-certificate__link">
                 <img
                   src="./assets/images/certificate_item/certificate1.png"
                   alt="Certificate 1"
-                  class="footer-certificate__img"
+                  class="footer-bottom-certificate__img"
                 />
               </a>
-              <a href="#footer" class="footer-certificate__link">
+              <a href="#footer" class="footer-bottom-certificate__link">
                 <img
                   src="./assets/images/certificate_item/certificate2.png"
                   alt="Certificate 3"
-                  class="footer-certificate__img"
+                  class="footer-bottom-certificate__img"
                 />
               </a>
             </div>
-            <div class="footer-more">
-              <p class="footer-more__company">Công ty TNHH Shopee</p>
-              <div class="footer-more__info">
+            <div class="footer-bottom-more">
+              <p class="footer-bottom-more__company">Công ty TNHH Shopee</p>
+              <div class="footer-bottom-more__info">
                 <p>
                   Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu
                   Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt
@@ -1815,7 +1993,7 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
 
